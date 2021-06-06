@@ -7,9 +7,9 @@ export const getPosts = () => async (dispatch) => {
 
         dispatch({ type: 'FETCH_ALL', payload: data });
     } catch (error) {
-        console.log(error.message)
+        console.log(error.message);
     }
-}
+};
 
 export const createPost = (post) => async (dispatch) => {
     try {
@@ -19,7 +19,7 @@ export const createPost = (post) => async (dispatch) => {
     } catch (error) {
         console.log(error);
     }
-}
+};
 
 export const updatePost = (id, post) => async (dispatch) => {
     try{
@@ -29,4 +29,4 @@ export const updatePost = (id, post) => async (dispatch) => {
     } catch (error) {
         console.log(error.message);
     }
-}
+};
